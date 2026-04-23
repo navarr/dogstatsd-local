@@ -1,6 +1,6 @@
-FROM golang:latest
+FROM golang:1
 
-COPY . /src
+COPY src /src
 
 RUN cd /src && CGO_ENABLED=0 GOOS=linux go build -o /dogstatsd-local -a .
 
