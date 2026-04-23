@@ -32,7 +32,6 @@ jobs:
             org.opencontainers.image.version=${{ github.ref_name }}
             org.opencontainers.image.title=${{ github.event.repository.name }}
             org.opencontainers.image.description=${{ github.event.repository.description }}
-            org.opencontainers.image.created=${{ format_date(github.event.created_at, 'yyyy-MM-dd') }}
             org.opencontainers.image.revision=${{ github.sha }}
             org.opencontainers.image.url=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
             org.opencontainers.image.documentation=https://github.com/${{ github.repository }}/blob/main/README.md
